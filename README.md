@@ -52,7 +52,6 @@ cmake --build build -j
 | `/reset` | POST | Goleste datele din memorie |
 | [ruta temei] | [metoda] | [descriere] |
 
-## Decizii de implementare
 
 ## Decizii de implementare
 
