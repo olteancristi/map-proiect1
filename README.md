@@ -1,17 +1,20 @@
-# [Titlul proiectului]
+# Agendă de contacte
 
 Proiect individual la disciplina Metode avansate de programare, anul universitar 2026-2027.
 
 ## Autor
 
-- **Nume:** [Nume Prenume]
-- **Grupa:** [grupa]
-- **Marca:** [marca]
-- **Tema:** [numarul temei] - [titlul temei]
+- **Nume:** Oltean Cristian-Daniel
+- **Grupa:** 2.1
+- **Marca:** 15700
+- **Tema:** 1 - Agenda de contacte
 
 ## Descriere
 
-[Doua-trei propozitii despre ce face aplicatia si ce problema rezolva.]
+Aplicația implementează o agendă de contacte care permite gestionarea informațiilor despre persoane.
+Datele contactelor pot fi adăugate, consultate și administrate prin intermediul serviciului implementat în C++.
+Aplicația expune o interfață HTTP și răspunde în format JSON.
+
 
 ## Tehnologii
 
@@ -51,4 +54,8 @@ cmake --build build -j
 
 ## Decizii de implementare
 
-[Doua-trei decizii tehnice pe care le-ati luat si motivul fiecareia.]
+## Decizii de implementare
+
+- Am ales C++20 ca limbaj de implementare, conform șablonului proiectului.
+- Pentru implementarea rutelor HTTP folosesc biblioteca `cpp-httplib`, deoarece oferă o interfață simplă pentru definirea endpoint-urilor.
+- Pentru lucrul cu date în format JSON folosesc biblioteca `nlohmann/json`, deoarece permite construirea și prelucrarea ușoară a obiectelor JSON în C++.
