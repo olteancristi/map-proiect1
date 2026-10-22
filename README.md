@@ -1,3 +1,5 @@
+[![CI](https://github.com/olteancristi/map-proiect1/actions/workflows/ci.yml/badge.svg)](https://github.com/olteancristi/map-proiect1/actions/workflows/ci.yml)
+
 # Agendă de contacte
 
 Proiect individual la disciplina Metode avansate de programare, anul universitar 2026-2027.
