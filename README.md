@@ -15,6 +15,7 @@ Aplicația implementează o agendă de contacte care permite gestionarea informa
 Datele contactelor pot fi adăugate, consultate și administrate prin intermediul serviciului implementat în C++.
 Aplicația expune o interfață HTTP și răspunde în format JSON.
 
+Modificare mica
 
 ## Tehnologii
 
