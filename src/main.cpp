@@ -248,11 +248,13 @@ server.Get("/stats", [&](const httplib::Request&, httplib::Response& response) {
     });
 
     server.set_error_handler([](const httplib::Request&, httplib::Response& response) {
-        if (response.status == 404) {
-            response.set_content(ErrorBody("not_found", "route does not exist").dump(),
-                                 "application/json; charset=utf-8");
-        }
-    });
+    if (response.status == 404 && response.body.empty()) {
+        response.set_content(
+            ErrorBody("not_found", "route does not exist").dump(),
+            "application/json; charset=utf-8"
+        );
+    }
+});
 
     std::cout << kAppName << " " << kAppVersion << " starting on port 8080" << std::endl;
     if (!server.listen("0.0.0.0", 8080)) {
